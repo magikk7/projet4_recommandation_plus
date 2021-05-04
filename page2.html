@@ -16,7 +16,7 @@
 	
 	<script src="./js/jquery-2.1.0.min.js" defer></script>
 	<script src="./js/bootstrap.min.js" defer></script>
-	<script src="./js/blocs.min.js" defer></script>
+	<script src="./js/blocs.js" defer></script>
 	<script src="./js/jqBootstrapValidation.js" defer></script>
 	<script src="./js/formHandler.js" defer></script>
 	<script src="js/scroll.min.js" defer></script>
@@ -85,7 +85,8 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<!-- <form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"> -->
+					<form id="form_1">
 					<div class="form-group">
 						<label for="name">
 							Nom
@@ -99,10 +100,10 @@
 						<input id="email" class="form-control" type="email" required />
 					</div>
 					<div class="form-group">
-						<label  for="input_504">
+						<label>
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" type="texte" required id="input_504" />
+						<input class="form-control" id="input_504" />
 					</div>
 					<div class="form-group">
 						<label for="message">
